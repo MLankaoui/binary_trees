@@ -24,4 +24,7 @@ typedef struct binary_tree_s bst_t; /* binary seach tree */
 typedef struct binary_tree_s avl_t; /* AVL tree */
 
 typedef struct binary_tree_s heap_t; /* max heap tree */
+
+binary_tree_t *binary_tree_node(binary_tree_t *parent, int value); /* header */
+
 #endif
