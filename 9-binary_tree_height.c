@@ -1,5 +1,13 @@
 #include "binary_trees.h"
 
+/**
+ * binary_tree_height - calculates the height of the tree
+ *
+ * @tree: the binary tree
+ *
+ * Descrtiption: a function to calculate the height
+ * Return: 0 if there is no tree. the height otherwise
+*/
 size_t binary_tree_height(const binary_tree_t *tree)
 {
 
@@ -18,6 +26,5 @@ size_t binary_tree_height(const binary_tree_t *tree)
 	if (left_side_binary_t > right_side_binary_t)
 		return (left_side_binary_t + 1);
 
-	else
-		return (right_side_binary_t + 1);
+	return (right_side_binary_t + 1);
 }
