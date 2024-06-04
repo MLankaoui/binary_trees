@@ -1,5 +1,12 @@
 #include "binary_trees.h"
-
+/**
+ * binary_tree_is_leaf - calculates the size of a tree
+ *
+ * @tree: the node
+ *
+ * Descrtiption: a function calculates the size of a tree
+ * Return: size if there is a tree. otherwise 0
+*/
 size_t binary_tree_size(const binary_tree_t *tree)
 {
 	size_t size_binary_tree;
