@@ -1,15 +1,15 @@
 #include "binary_trees.h"
 
 
-size_t binary_tree_height(const binary_tree_t *tree)
+size_t binary_tree_depth(const binary_tree_t *tree)
 {
     size_t left_side_binary_t, right_side_binary_t;
 
 	if (tree == NULL)
 		return (0);
 
-	left_side_binary_t = binary_tree_height(tree->left);
-	right_side_binary_t = binary_tree_height(tree->right);
+	left_side_binary_t = binary_tree_depth(tree->left);
+	right_side_binary_t = binary_tree_depth(tree->right);
 
 	if (left_side_binary_t > right_side_binary_t)
 		return (left_side_binary_t + 1);
