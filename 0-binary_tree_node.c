@@ -24,12 +24,16 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 
 	new_node->n = value;
 
+	new_node->right = NULL;
+
+	new_node->left = NULL;
+
 	if (parent != NULL)
 	{
 		if (parent->right == NULL)
 			parent->right = new_node;
 
-		if (parent->left == NULL)
+		else if (parent->left == NULL)
 			parent->left = new_node;
 
 		else
