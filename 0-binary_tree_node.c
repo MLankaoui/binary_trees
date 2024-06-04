@@ -16,9 +16,10 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 
 	if (new_node == NULL)
 	{
-
+		free(new_node);
 		return (NULL);
 	}
+
 
 	new_node->parent = parent;
 
@@ -38,7 +39,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 
 		else
 		{
-			free(new_node);
+
 			return (NULL);
 		}
 
